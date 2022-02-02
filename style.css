@@ -15,7 +15,7 @@ grid-template-rows: repeat(4, auto);
 
 }
 .barra{
-    background-color: #d9b592;
+    background-image: linear-gradient(#d9b592, #f5e1ce);
     display: flex;
     flex-direction: column;
     justify-content: center;  
@@ -68,7 +68,7 @@ li{
     justify-content: center;
 }
 footer{
-    background-color: #d9b592;
+    background-image: linear-gradient(#d9b592, #f5e1ce);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
