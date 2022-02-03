@@ -24,7 +24,8 @@ grid-template-rows: repeat(4, auto);
 }
 .barra img{
     width: 18%; 
-    margin-left: 35%;
+    display: flex;
+    justify-content: center;
 } 
  .barra a{
     text-decoration: none;
