@@ -1,0 +1,9 @@
+agregue keywords en todos los html con descripción de lo que pueden encontrar en esa pagina,
+ejemplo fui poniendo algo caracteristico de esa pagina para que figure en la busqueda.
+
+Cambie los titulos de los html les agregue el nombre de las diferentes paginas:
+accesorios
+indumentaria
+deco : decoración
+contacto.
+En cada Html puse un description donde hay una parrafo distinto y se identifica con el contenido de cada uno.
