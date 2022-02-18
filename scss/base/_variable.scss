@@ -1,0 +1,32 @@
+$colores: (bgprimario:antiquewhite,
+    hoverBarra:#a68562,
+
+);
+
+%flexcenter {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexbox ($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+}
+
+@mixin mediaQuery ($pantalla, $tamaño) {
+    @if $pantalla==mobile {
+        @media only screen and (min-width: $tamaño) {
+            @content;
+        }
+    }
+
+    @else {
+        @media only screen and (max-width: $tamaño) {
+            @content;
+        }
+    }
+
+}
+
+;

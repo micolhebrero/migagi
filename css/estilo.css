@@ -1,3 +1,7 @@
+.barra img, .carousel, .tiempoEntrega {
+  display: flex;
+  justify-content: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -19,9 +23,7 @@ body {
   justify-content: center;
   align-items: center; }
   .barra img {
-    width: 18%;
-    display: flex;
-    justify-content: center; }
+    width: 18%; }
   .barra a {
     text-decoration: none;
     color: black;
@@ -35,9 +37,7 @@ li {
   display: inline-block; }
 
 .carousel {
-  width: 40%;
-  display: flex;
-  justify-content: center; }
+  width: 40%; }
 
 .quienSoy {
   border-radius: 10px;
@@ -54,10 +54,6 @@ li {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-items: center; }
-
-.tiempoEntrega {
-  display: flex;
   justify-content: center; }
 
 footer {
@@ -86,3 +82,52 @@ footer {
   color: black; }
   .bi-whatsapp:hover {
     color: #00bb2d; }
+
+@media only screen and (max-width: 599px) {
+  .bi-facebook {
+    font-size: 1.5rem; }
+  .bi-instagram {
+    font-size: 1.5rem; }
+  .bi-whatsapp {
+    font-size: 1.5rem; } }
+
+.card {
+  margin: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "cardUno cardDos cardTres" "cardCuatro cardCinco cardSeis" "cardSiete cardOcho cardNueve";
+  background-color: #f5e1ce;
+  margin: 1rem;
+  padding: 1rem; }
+  .card .cardUno {
+    grid-area: cardUno; }
+  .card .cardDos {
+    grid-area: cardDos; }
+  .card .cardTres {
+    grid-area: cardTres; }
+  .card .cardCuatro {
+    grid-area: cardCuatro; }
+  .card .cardCinco {
+    grid-area: cardCinco; }
+  .card .cardSeis {
+    grid-area: cardSeis; }
+  .card .cardSiete {
+    grid-area: cardSiete; }
+  .card .cardOcho {
+    grid-area: cardOcho; }
+  .card .cardNueve {
+    grid-area: cardNueve; }
+
+@media only screen and (max-width: 599px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "cardUno" "cardDos" "cardTres" "cardCuatro" "cardCinco" "cardSeis" "cardSiete" "cardOcho" "cardNueve"; } }
+
+@media only screen and (max-width: 599px) {
+  .mapa {
+    width: 250px;
+    height: 250px;
+    margin: 10%; } }

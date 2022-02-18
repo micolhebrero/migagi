@@ -23,8 +23,8 @@
   
     img {
       width: 18%;
-      display: flex;
-      justify-content: center;
+      @extend %flexcenter;
+     
     }
   
     a {
@@ -35,7 +35,7 @@
       margin: 30px;
   
       &:hover {
-        color: #a68562;
+        color: map-get($colores, hoverBarra );
       }
     }
   }
@@ -45,8 +45,8 @@
   
   .carousel {
     width: 40%;
-    display: flex;
-    justify-content: center;
+    @extend %flexcenter;
+  
   }
   
   .quienSoy {
@@ -63,21 +63,17 @@
   .tiempo {
     background-color: white;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    @include flexbox (column, center);
   }
   
   .tiempoEntrega {
-    display: flex;
-    justify-content: center;
+    @extend %flexcenter;
+  
   }
   
   footer {
     background-image: linear-gradient(#d9b592, #f5e1ce);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flexbox (row, space-evenly);
   }
   
   .bi-facebook {
@@ -108,4 +104,17 @@
     &:hover {
       color: #00bb2d;
     }
-  }
+  };
+  @include mediaQuery (tablet, 599px) {
+
+    .bi-facebook{
+      font-size: 1.5rem;
+    }
+    .bi-instagram{
+      font-size: 1.5rem;
+    }
+    .bi-whatsapp{
+      font-size: 1.5rem;
+    }
+
+};
