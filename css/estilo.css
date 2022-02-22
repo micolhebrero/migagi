@@ -84,6 +84,8 @@ footer {
     color: #00bb2d; }
 
 @media only screen and (max-width: 599px) {
+  .carousel {
+    width: auto; }
   .bi-facebook {
     font-size: 1.5rem; }
   .bi-instagram {
@@ -91,40 +93,83 @@ footer {
   .bi-whatsapp {
     font-size: 1.5rem; } }
 
-.card {
-  margin: 40%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas: "cardUno cardDos cardTres" "cardCuatro cardCinco cardSeis" "cardSiete cardOcho cardNueve";
-  background-color: #f5e1ce;
-  margin: 1rem;
-  padding: 1rem; }
-  .card .cardUno {
-    grid-area: cardUno; }
-  .card .cardDos {
-    grid-area: cardDos; }
-  .card .cardTres {
-    grid-area: cardTres; }
-  .card .cardCuatro {
-    grid-area: cardCuatro; }
-  .card .cardCinco {
-    grid-area: cardCinco; }
-  .card .cardSeis {
-    grid-area: cardSeis; }
-  .card .cardSiete {
-    grid-area: cardSiete; }
-  .card .cardOcho {
-    grid-area: cardOcho; }
-  .card .cardNueve {
-    grid-area: cardNueve; }
-
-@media only screen and (max-width: 599px) {
-  .card {
+/* .card {
+    margin: 40%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "cardUno" "cardDos" "cardTres" "cardCuatro" "cardCinco" "cardSeis" "cardSiete" "cardOcho" "cardNueve"; } }
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "cardUno cardDos cardTres" "cardCuatro cardCinco cardSeis" "cardSiete cardOcho cardNueve";
+    background-color: #f5e1ce;
+    margin: 1rem;
+    padding: 1rem;
+    
+    .cardUno{
+            grid-area: cardUno;
+        
+    }
+        
+    .cardDos{
+            grid-area: cardDos;
+        
+    }
+        
+    .cardTres{
+            grid-area: cardTres;
+        
+    }
+        
+    .cardCuatro{
+            grid-area: cardCuatro;
+        
+    }
+        
+    .cardCinco{
+            grid-area: cardCinco;
+        
+    }
+        
+    .cardSeis{
+            grid-area: cardSeis;
+        
+    }
+        
+    .cardSiete{
+            grid-area: cardSiete;
+        
+    }
+        
+    .cardOcho{
+            grid-area: cardOcho;
+        
+    }
+    .cardNueve{
+            grid-area: cardNueve;
+        
+    }
+};
+@include mediaQuery (tablet, 599px) {
+
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "cardUno"
+        "cardDos"
+        "cardTres"
+        "cardCuatro"
+        "cardCinco"
+        "cardSeis"
+        "cardSiete"
+        "cardOcho"
+        "cardNueve";
+    }
+
+}; */
+.card {
+  background-color: #f5e1ce;
+  padding: 1rem;
+  margin: 1rem; }
 
 @media only screen and (max-width: 599px) {
   .mapa {

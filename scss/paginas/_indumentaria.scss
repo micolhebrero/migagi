@@ -1,4 +1,4 @@
-.card {
+/* .card {
     margin: 40%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -70,7 +70,11 @@
         "cardNueve";
     }
 
-};
+}; */
 
-
+.card{
+        background-color: #f5e1ce;
+        padding: 1rem;
+        margin: 1rem;
+}
 

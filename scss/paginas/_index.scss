@@ -107,6 +107,10 @@
   };
   @include mediaQuery (tablet, 599px) {
 
+    .carousel{
+      width: auto;
+    }
+
     .bi-facebook{
       font-size: 1.5rem;
     }
