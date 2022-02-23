@@ -2,5 +2,13 @@
         background-color: #f5e1ce;
         padding: 1rem;
         margin: 1rem;
-}
+};
+@include mediaQuery (tablet, 599px) {
+
+        .col{
+           display: flex;
+           flex-direction: row;
+        }
+    
+    };
 

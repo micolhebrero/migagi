@@ -21,7 +21,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
   .barra img {
     width: 18%; }
   .barra a {
@@ -97,6 +98,11 @@ footer {
   background-color: #f5e1ce;
   padding: 1rem;
   margin: 1rem; }
+
+@media only screen and (max-width: 599px) {
+  .col {
+    display: flex;
+    flex-direction: row; } }
 
 @media only screen and (max-width: 599px) {
   .mapa {
